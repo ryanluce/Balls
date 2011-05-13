@@ -88,7 +88,7 @@ enum {
         
         
 		
-		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Tap screen" fontName:@"Marker Felt" fontSize:32];
+		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Touch my balls!" fontName:@"Helvetica" fontSize:32];
 		[self addChild:label z:0];
 		[label setColor:ccc3(0,0,255)];
 		label.position = ccp( screenSize.width/2, screenSize.height-50);
