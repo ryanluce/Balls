@@ -71,9 +71,10 @@
 	[director setOpenGLView:glView];
 	
 //	// Enables High Res mode (Retina Display) on iPhone 4 and maintains low res on all other devices
-//	if( ! [director enableRetinaDisplay:YES] )
-//		CCLOG(@"Retina Display Not supported");
-	
+	if( ! [director enableRetinaDisplay:YES] )
+		CCLOG(@"Retina Display Not supported");
+	 [glView setMultipleTouchEnabled:YES];
+    
 	//
 	// VERY IMPORTANT:
 	// If the rotation is going to be controlled by a UIViewController
@@ -88,6 +89,8 @@
 #else
 	[director setDeviceOrientation:kCCDeviceOrientationLandscapeLeft];
 #endif
+    
+    [director setDeviceOrientation:kCCDeviceOrientationPortrait];
 	
 	[director setAnimationInterval:1.0/60];
 	[director setDisplayFPS:YES];
