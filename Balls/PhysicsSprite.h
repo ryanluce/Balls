@@ -45,7 +45,6 @@ typedef enum tagTouchState {
 
 - (CGRect)rect;
 - (CGRect)rectInPixels;
- 
-- (void)flingWithEndLocation:(CGPoint)endLocation;
+
 - (void)setupPhysics;
 @end
