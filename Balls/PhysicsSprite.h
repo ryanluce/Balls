@@ -21,8 +21,6 @@ typedef enum tagTouchState {
 
 @interface PhysicsSprite : CCSprite<CCTargetedTouchDelegate> {
 
-    BOOL _boolIsFlingable;
-    BOOL _boolIsTouching;
     float _floatTimeStartedDraggingTime;
     CGPoint _cgPointStartedDraggingPoint;
     TouchState state;
@@ -35,8 +33,7 @@ typedef enum tagTouchState {
 }
 
 
-@property BOOL boolIsFlingable;
-@property BOOL boolIsTouching;
+
 @property float floatTimeStartedDraggingTime;
 @property CGPoint cgPointStartedDraggingPoint;
 
